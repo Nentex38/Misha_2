@@ -2,8 +2,8 @@ import discord
 from discord.ext import commands
 
 class Misha(commands.Bot):
-    def __init__(self, command_prefix):
-        super().__init__(command_prefix)
+    def __init__(self, !):
+        super().__init__(!)
         self.user_data = {}
 
     async def on_ready(self):
@@ -56,6 +56,6 @@ class Misha(commands.Bot):
                 user_data[key] = value
         return user_data
 
-bot = Misha(command_prefix="!")
+bot = Misha(!="!")
 bot.run("MTA0ODgzMzIwNzU1MTkzMDQxOA.GItLqG.BIDNiQZ7Wob9Dg8QCOGFrBXkjpDhjwvw1abrXc")
     
